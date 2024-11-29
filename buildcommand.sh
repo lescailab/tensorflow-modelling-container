@@ -1,0 +1,11 @@
+docker buildx build \
+--label org.opencontainers.image.title=tensorflow-modelling \
+--label org.opencontainers.image.description='container running RStudio on a tensorflow base ubuntu to run modelling with GPU support' \
+--label org.opencontainers.image.url=https://github.com/lescailab/tensorflow-modelling \
+--label org.opencontainers.image.source=https://github.com/lescailab/tensorflow-modelling --label org.opencontainers.image.version=1.1.0 \
+--label org.opencontainers.image.created=2023-01-13T12:39:11.393Z \
+--label org.opencontainers.image.licenses=MIT \
+--platform linux/amd64 \
+--tag ghcr.io/lescailab/tensorflow-modelling:1.0.0 \
+--tag ghcr.io/lescailab/tensorflow-modelling:latest \
+--push .
